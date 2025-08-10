@@ -511,8 +511,9 @@ document.getElementById('sell-btn').addEventListener('click', sellCoin);
   await fetchMarketData();
   updateMarketTable();
   // refresh periodically
-  setInterval(async ()=>{ await fetchMarketData(); updateMarketTable(); }, 30000);
+  setInterval(async ()=>{ await fetchMarketData(); updateMarketTable(); }, 10000);
 })();
 </script>
 </body>
 </html>
+
